@@ -1,0 +1,32 @@
+<template name="00eb4b17">
+  <view class="_view data-v-ebaaadee container">
+    <form bindsubmit="handleProxy" bindreset="handleProxy" data-eventid="{{'BB4-3'}}" data-comkey="{{$k}}" class="_form data-v-ebaaadee">
+      <button class="_button data-v-ebaaadee submitBtn" bindtap="handleProxy" data-eventid="{{'oY6-0'}}" data-comkey="{{$k}}"> 选择视频</button>
+      <block wx:if="{{show}}">
+        <view class="_view data-v-ebaaadee video">
+          <video src="{{videoSrc}}" controls class="_video data-v-ebaaadee"></video>
+        </view>
+      </block>
+      <scroll-view scroll-y="true" class="_scroll-view data-v-ebaaadee scroll-Y">
+        <view class="_view data-v-ebaaadee uni-list">
+          <radio-group bindchange="handleProxy" data-eventid="{{'I0w-1'}}" data-comkey="{{$k}}" class="_radio-group data-v-ebaaadee">
+            <label class="_label data-v-ebaaadee uni-list-cell uni-list-cell-pd" wx:key="item.id" key="{{item.id}}" wx:for="{{bgmList}}" wx:for-index="index" wx:for-item="item">
+              <view class="_view data-v-ebaaadee">
+                <radio value="{{item.id}}" class="_radio data-v-ebaaadee" />
+              </view>
+              <view class="_view data-v-ebaaadee container">
+                <audio style="text-align: left" src="{{bgmServerUrl + item.path}}" poster="{{current.poster}}" name="{{item.name}}" author="{{item.author}}" action="{{audioAction}}" controls class="_audio data-v-ebaaadee"></audio>
+              </view>
+            </label>
+          </radio-group>
+        </view>
+      </scroll-view>
+      <view class="_view data-v-ebaaadee inputView">
+        <label class="_label data-v-ebaaadee loginLabel">视频描述：</label>
+        <input value="{{video.desc}}" bindinput="handleProxy" name="desc" class="_input data-v-ebaaadee inputText" placeholder="说点什么吧" data-eventid="{{'hlM-2'}}" data-comkey="{{$k}}" />
+      </view>
+      <button formType="submit" class="_button data-v-ebaaadee submitBtn" type="primary">上传视频</button>
+      <button type="default" formType="reset" class="_button data-v-ebaaadee gobackBtn">重置</button>
+    </form>
+  </view>
+</template>

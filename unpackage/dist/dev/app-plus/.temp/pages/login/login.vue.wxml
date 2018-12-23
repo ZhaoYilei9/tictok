@@ -1,0 +1,28 @@
+<template name="d3956296">
+  <view class="_view data-v-07d819e7 content">
+    <view class="_view data-v-07d819e7">
+      <view class="_view data-v-07d819e7 login-icon">
+        <image class="_image data-v-07d819e7 login-img" src="../../static/images/dsp.jpg"></image>
+      </view>
+      <form bindsubmit="handleProxy" bindreset="handleProxy" data-eventid="{{'63m-0'}}" data-comkey="{{$k}}" class="_form data-v-07d819e7">
+        <view class="_view data-v-07d819e7 inputView">
+          <image class="_image data-v-07d819e7 nameImage" src="../../static/images/username.png"></image>
+          <label class="_label data-v-07d819e7 loginLabel">账号</label>
+          <input id="username" name="username" value="zyl123" class="_input data-v-07d819e7 inputText" placeholder="请输入账号" />
+        </view>
+        <view class="_view data-v-07d819e7 line"></view>
+        <view class="_view data-v-07d819e7 inputView">
+          <image class="_image data-v-07d819e7 keyImage" src="../../static/images/password.png"></image>
+          <label class="_label data-v-07d819e7 loginLabel">密码</label>
+          <input id="password" name="password" value="123" class="_input data-v-07d819e7 inputText" password="true" placeholder="请输入密码" />
+        </view>
+        <view class="_view data-v-07d819e7">
+          <button class="_button data-v-07d819e7 loginBtn" type="primary" form-type="submit">登录</button>
+        </view>
+        <view class="_view data-v-07d819e7">
+          <button class="_button data-v-07d819e7 goRegistBtn" type="warn" bindtap="goRegistPage">没有账号？点击注册</button>
+        </view>
+      </form>
+    </view>
+  </view>
+</template>

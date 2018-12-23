@@ -1,0 +1,16 @@
+<template name="499bdbca">
+  <view class="_view data-v-786db513 container">
+    <image src="{{imageSrc}}" class="_image data-v-786db513 face" bindtap="handleProxy" data-eventid="{{'T79-0'}}" data-comkey="{{$k}}"></image>
+    <label class="_label data-v-786db513 nickname">{{nickname}}</label>
+    <button size="mini" class="_button data-v-786db513 primary" bindtap="handleProxy" data-eventid="{{'zjS-1'}}" data-comkey="{{$k}}"> 上传作品</button>
+    <button size="mini" type class="_button data-v-786db513 logout" bindtap="handleProxy" data-eventid="{{'nsW-2'}}" data-comkey="{{$k}}">注销</button>
+    <view class="_view data-v-786db513 container-row">
+      <label class="_label data-v-786db513 info-items">{{fansCounts}} 粉丝</label>
+      <label class="_label data-v-786db513 info-items">{{followCounts}} 关注</label>
+      <label class="_label data-v-786db513 info-items">{{receiveLikeCounts}} 获赞</label>
+    </view>
+    <view class="_view data-v-786db513 container">
+      <video src="{{videoSrc}}" controls class="_video data-v-786db513"></video>
+    </view>
+  </view>
+</template>
